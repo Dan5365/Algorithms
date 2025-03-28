@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 /**
- * The Main class enters an array and searches for the minimum number.
+ * The SecondTask class reads an array from input and calculates its average value.
  */
-public class Main {
+public class SecondTask {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,24 +16,23 @@ public class Main {
         }
         scanner.close();
 
-        // Function call and minimum output
-        System.out.println(findMin(n, arr));
+        // Function call and average output
+        System.out.println(findAvg(n, arr));
     }
 
     /**
-     * A function for searching for the minimum element in an array.
+     A function for calculating the average value of an array.
+     *
      * @param n   size of array
      * @param arr array of numbers
-     * @return min element of array
+     * @return average of numbers
      */
-    public static int findMin(int n, int[] arr) {
-        int min = arr[0]; // We take the first element as the initial minimum
-        for (int i = 1; i < n; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
-            }
+    public static float findAvg(int n, int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += arr[i];
         }
-        return min;
+        return (float) sum / n;
     }
 }
 // The time complexity is O(n), since we have 2 separate "for" loops, each traversing the array 1 time.
