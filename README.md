@@ -22,5 +22,5 @@ This project contains solutions to ten programming problems using functions and 
 - The binomial coefficient problem demonstrates combinatorial recursion.
 
 ## Author
-- Adilbekuly Daniyal
+- Adilbekuly Daniyal SE 2407
 
